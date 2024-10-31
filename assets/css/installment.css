@@ -1,0 +1,575 @@
+.payon_ins_wrap, .payon_ins_wrap * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Arial','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: inherit;
+}
+.payon_ins_prod:after,
+.payon_ins_box:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.payon_ins_wrap {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.payon_ins_wrap {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.payon_ins_prod {
+    margin: 0;
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.payon_ins_wrap .payon_ins_title {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 10px;
+    font-weight: 600;
+    display: block;
+}
+.payon_ins_col1 {
+    width: 50%;
+    padding-right: 10px;
+    float: left;
+}
+.payon_ins_col2 {
+    width: 50%;
+    padding-left: 10px;
+    float: left;
+}
+.payon_ins_wrap select {
+    border: 1px solid #eee;
+    height: 42px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    position: relative;
+    background: #fff;
+    width: 100%;
+    outline: none;
+    font-family: 'Arial','Helvetica Neue',Helvetica,Arial,sans-serif;
+    padding: 5px 10px 4px;
+    vertical-align: baseline;
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+    box-shadow: none;
+    margin: 0 0 5px 0;
+}
+.payon_ins_box {
+    margin: 0 0 10px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+@-webkit-keyframes fx {
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes fx {
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+body .payon_ins_wrap input {
+    border: 1px solid #d9d9d9;
+    height: 40px;
+    padding: 9px 10px;
+    width: 100%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #333;
+    margin: 0 0 5px 0;
+    display: block;
+    background: #fff;
+    background-clip: padding-box;
+    font-family: 'Arial','Helvetica Neue',Helvetica,Arial,sans-serif;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+body .payon_ins_wrap input:focus {
+    background: #fff;
+    color: #333;
+}
+body #submit_button {
+    background: #d9232e;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    height: 40px;
+    border: 0;
+    min-width: 150px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.payon_ins_col.submit_button {
+    text-align: center;
+}
+.payon_ins_prod h1 {
+    display: inline-block;
+    margin: 0 30px 10px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+.payon_ins_prod h1 a {
+    font-weight: 700;
+}
+.payon_ins_prod > span {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+/*payon*/
+body .payon_ins_wrap .payon_listbank input[type="radio"],
+body .payon_ins_wrap .payon_cardtype input[type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.payon_listbank,
+.payon_cardtype{
+    margin: 0 -5px;
+    overflow: hidden;
+}
+.payon_listbank label,
+.payon_cardtype label {
+    width: 25%;
+    float: left;
+    padding: 0 5px;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+div[class^="payon_step"] {
+    overflow: hidden;
+    margin: 0 0 20px 0;
+}
+.payon_listbank label span,
+.payon_cardtype label span{
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    text-align: center;
+    height: 48px;
+    display: block;
+    position: relative;
+}
+.payon_listbank label span img,
+.payon_cardtype label span img {
+    position: absolute;
+    max-width: 89%;
+    max-height: 38px;
+    height: auto;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%,0);
+    -moz-transform: translate3d(-50%, -50%,0);
+    -webkit-transform: translate3d(-50%, -50%,0);
+}
+.payment_method_payon .payon_listbank label, .payment_method_payon .payon_cardtype label {
+    width: 25%;
+}
+.payon_ins_wrap .payon_label{
+    margin: 0 0 10px;
+}
+.payon_listbank label input:checked ~ span,
+.payon_cardtype label input:checked ~ span {
+    border-color: #348ccb;
+}
+
+.payon_listbank {
+    margin-bottom: 10px;
+}
+
+.paymentMethod_wrap {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+}
+.paymentMethod {
+    min-width: 509px;
+}
+.payon_ins_prod_left {
+    float: left;
+    width: 100px;
+    margin: 0 10px 0 0;
+}
+.payon_ins_prod_right {
+    overflow: hidden;
+}
+.list_radio_style label input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.list_radio_style label {
+    font-weight: 400;
+}
+.list_radio_style {
+    margin: 5px -5px;
+}
+.list_radio_style label {
+    font-weight: 400;
+    width: 25%;
+    padding: 0 5px;
+    float: left;
+    margin: 0 0 10px;
+}
+.list_radio_style label > span {
+    background-color: #fff;
+    transition: all 250ms ease;
+    will-change: transition;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 5px 10px;
+    height: 50px;
+    overflow: hidden;
+    box-shadow: 3px 3px 12px -6px rgba(0,0,0,0.2);
+}
+.list_radio_style label > span > strong {
+    display: block;
+}
+.list_radio_style label > span .amount {
+    font-weight: 400;
+}
+.list_radio_style label input:checked ~ span {
+    color: #fff;
+    background: #348ccb;
+    border-color: #348ccb;
+}
+.list_radio_style label input:checked ~ span * {
+    color: #fff;
+}
+.list_radio_style.payon_cycle_wrap > label {
+    width: 25%;
+    max-width: 93px;
+}
+.total_payon_wrap{
+    display: none;
+    color:  black;
+}
+.list_radio_style:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.total_payon_wrap ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.total_payon_wrap ul li {
+    width: 25%;
+    float: left;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-right: 0;
+}
+.total_payon_wrap ul li strong {
+    display: block;
+    background: #ffee5d;
+    color: #000;
+    /* padding: 10px; */
+}
+.total_payon_wrap ul li:last-child {
+    border-right: 1px solid #ddd;
+}
+.total_payon_wrap ul li span {
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+}
+
+.payon_ins_wrap td {
+    color: #333;
+    padding: 5px 10px !important;
+    border-color: #ddd;
+    font-size: 14px;
+}
+
+.bank_infor_customer,
+.payon_card_box{
+    display: none;
+}
+.payon_card_box {
+    margin-bottom: 20px;
+}
+.payon_mess {
+    background: #04AA6D;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.payment_method_payon .total_payon_wrap ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+}
+.payment_method_payon .total_payon_wrap ul li strong {
+    background: transparent;
+}
+.payment_method_installment .total_payon_wrap ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+}
+.payment_method_installment .total_payon_wrap ul li strong {
+    background: transparent;
+}
+@media (max-width: 767px){
+    .payon_ins_btn {
+        display: block;
+    }
+    .payon_ins_btn a {
+        width: 100%;
+        margin: 0 0 5px 0 !important;
+    }
+    .payon_ins_wrap #choose_type .type {
+        font-size: 14px;
+        padding: 10px 10px 10px 54px;
+    }
+    .payon_ins_wrap #choose_type .type.type-cty {
+        background: #fff url(../images/type-1.png) no-repeat 0px center;
+    }
+    .payon_ins_wrap #choose_type .type.type-cc {
+        background: #fff url(../images/type-2.png) no-repeat 3px center;
+    }
+    .payon_ins_wrap #choose_type li {
+        display: block;
+        width: 100%;
+        margin: 0 0 5px 0 !important;
+    }
+    .bg-white{
+        background-color: white;
+    }
+    .payon_listbank label, .payon_cardtype label {
+        width: 33.333% !important;
+    }
+    .payon_ins_wrap {
+        padding: 10px;
+    }
+
+    .paymentMethod, .paymentMethod * {
+        font-size: 12px;
+    }
+    .payon-item aside, .payon-firstcol aside {
+        padding: 3px !important;
+    }
+    .payon-firstcol {
+        width: 21%;
+    }
+    .infocard div aside {
+        height: 45px !important;
+    }
+    a.cart-btt, #payon_btncomplete ,
+    #bank_btncomplete{
+        font-size: 12px;
+        padding: 0 3px;
+    }
+
+    .list_radio_style label {
+        width: 132px;
+    }
+    .total_payon_wrap ul li {
+        width: 100%;
+        margin: 0 0 10px !important;
+        border-right: 1px solid #ddd;
+        font-size: 16px;
+    }
+}
+
+
+.payon-listbank ul {
+    display: flex !important;
+    flex-wrap: wrap;
+    margin: 0 !important;
+    list-style: none;
+}
+
+.payon-listbank ul li {
+    width: 31%;
+    padding: 0 5px;
+    padding-top: 0 !important;
+    border-top: none !important;
+}
+
+.payon-listbank input[type="radio"] {
+    border: 0;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.payon-listbank span {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    text-align: center;
+    height: 48px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.payon-listbank span img {
+    height: 38px;
+}
+
+.payon-listbank label input[type="radio"]:checked+span {
+    border-color: #008BF4;
+}
+@media (max-width: 500px)
+{
+    .list_radio_style label {
+        width: 50%;
+    }
+    .list_radio_style.payon_cycle_wrap > label {
+        width: 24.333%;
+        margin: 5px 0px !important;
+    }   
+     .payon-listbank span img {
+        height: 30px;
+        margin: 0 !important;
+    }
+}
+.fee-desktop table {
+    border: 1px solid #d3d5d7;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0f1824;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+    width: 100%;
+    margin: 0;
+}
+.fee-desktop table thead {
+    background: #f4f4f5;
+}
+.active-button {
+    border: solid !important;
+    background: #08f !important;
+    color: white !important;
+}
+.fee-desktop .btn-choose-cycle:hover {
+    background: #08f;
+    color: #fff;
+}
+.fee-desktop table thead th:first-child {
+    text-align: left;
+}
+.fee-desktop table tbody td:first-child {
+    text-align: left;
+}
+.fee-desktop table thead th {
+    padding: 12px 16px;
+    text-align: right;
+    font-weight: bold;
+    border-bottom: 1px solid #d3d5d7;
+    white-space: nowrap;
+}
+.fee-desktop table tbody td .red {
+    color: #ff4d4d;
+}
+.fee-desktop table tbody td span {
+    display: block;
+}
+.button-tragop{
+    background-color: #0069D9 !important;
+}
+.btn-choose-cycle {
+    height: 36px;
+    border: 1px solid #08f;
+    border-radius: 3px;
+    background: #fff;
+    color: #08f;
+    margin-top: 10px;
+    transition: all .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 0 10px;
+    float: right;
+}
+.fee-desktop table tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #d3d5d7;
+    text-align: right;
+    vertical-align: top;
+}
+
+@media (max-width: 767px){
+    .payon_ins_prod h1 {
+        margin-right: 0;
+        display: block;
+    }
+    .payon-listbank ul li {
+        width: 26%;
+    }
+}
+@media (max-width: 590px){
+    .payon_ins_col1 {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+    .payon_ins_col2 {
+        width: 100%;
+        padding-left: 0;
+    }
+}
